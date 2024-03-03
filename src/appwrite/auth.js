@@ -19,7 +19,7 @@ export class AuthService {
 				name
 			);
 
-			console.log(userAccount);
+			console.log("auth service createAccount:: ", userAccount);
 
 			if (userAccount) {
 				return await this.login({ email, password });
